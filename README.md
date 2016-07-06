@@ -1,4 +1,4 @@
-# ackerman
+# Ackerman
 Implement  Ackerman Function Ackermann(m, n)
 
 * using memoization to reduce the number of calculations made
