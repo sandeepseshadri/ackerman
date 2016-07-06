@@ -24,6 +24,20 @@ class AckermannTest extends TestCase
     }
 
     /**
+     * @test
+     * @dataProvider sampleData
+     * @param $m
+     * @param $n
+     * @param $expected
+     */
+    public function it_returns_computed_value_non_recursive($m, $n, $expected)
+    {
+        $result = $this->ackermann->nonRecursiveCompute($m, $n);
+        $this->assertEquals($expected, $result);
+    }
+
+
+    /**
      * @return array
      */
     public function sampleData()
