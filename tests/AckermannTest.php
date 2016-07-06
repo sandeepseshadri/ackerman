@@ -22,7 +22,7 @@ class AckermannTest extends TestCase
         $result = $this->ackermann->compute($m, $n);
         $this->assertEquals($expected, $result);
     }
-    
+
     /**
      * @return array
      */
@@ -34,7 +34,9 @@ class AckermannTest extends TestCase
             [3,1, 13],
             [3,2, 29],
             [3,3, 61],
-            [3, 4, 125]
+            [3, 4, 125],
+            [4, 0, 13],
+            [4, 1, 65533],
         ];
     }
 }

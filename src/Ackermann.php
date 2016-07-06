@@ -7,7 +7,7 @@ class Ackermann
     protected static $cachedValues = [];
 
     /**
-     * Calulated ackermanns function using memorization
+     * Calculate ackermann's function using memorization
      * @param $m
      * @param $n
      * @return int
@@ -24,7 +24,9 @@ class Ackermann
         } elseif ($m == 1) {
             $result = $n + 2;
         } elseif ($m == 2) {
-            $result = (2 * $n)+ 3;
+            $result = (2 * $n) + 3;
+        } elseif ($m == 3) {
+            $result = pow(2, $n+3) -3;
         } elseif ($n == 0) {
             $result = self::compute($m-1, 1);
         } else {
