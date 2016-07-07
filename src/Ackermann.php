@@ -20,6 +20,8 @@ class Ackermann
         }
 
         switch ($m) {
+
+            //using formula for lower values of m
             case 0:
                 $result =  $n + 1;
                 break;
@@ -57,6 +59,7 @@ class Ackermann
         for ($i=0; $i <= $m; $i++) {
             for ($j = 0; $j <= $n; $j++) {
                 switch ($i) {
+                    //using formula for lower values of m
                     case 0:
                         self::$cachedValues[$i][$j] =  $j + 1;
                         break;
