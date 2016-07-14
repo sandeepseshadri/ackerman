@@ -36,9 +36,9 @@ class Ackermann
                 break;
             default:
                 if ($n == 0) {
-                    $result = self::compute($m-1, 1);
+                    $result = $this->compute($m-1, 1);
                 } else {
-                    $result = self::compute($m-1, self::compute($m, $n-1));
+                    $result = $this->compute($m-1, $this->compute($m, $n-1));
                 }
         }
 
