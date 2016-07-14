@@ -4,6 +4,10 @@ namespace App;
 
 class Ackermann
 {
+    /**
+     * Store calculated values
+     * @var array
+     */
     protected static $cachedValues = [];
 
     /**
@@ -56,6 +60,7 @@ class Ackermann
      */
     public function nonRecursiveCompute($m, $n)
     {
+        //looping through each value of m and n starting at 0,0
         for ($i=0; $i <= $m; $i++) {
             for ($j = 0; $j <= $n; $j++) {
                 switch ($i) {
